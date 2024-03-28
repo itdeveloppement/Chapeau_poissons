@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapaux poisson</title>
+    <link rel="stylesheet" href="./assets/css/hamburgers.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -12,12 +13,35 @@
 
 </head>
 <body>
-
     <!-- HEADER -->
-    <header class="flex justifyBetween" >
-        <a href="#home"><img src="./assets/images/Logo.jpg" alt="logo chapeau poisson"></a>
-        <nav>
-            <ul class="flex justifyBetween">
+    <header>
+        <section class="nav-bar flex">
+            <div class="logo">
+                <a href="#home"><img src="./assets/images/Logo.jpg" alt="logo chapeau poisson"></a>
+            </div>
+            <!-- nav centrale -->
+            <nav class="nav-central">
+                <ul class="flex">
+                    <li><a href="#home">Home</li></a>
+                    <li><a href="#histoire">La belle histoire</li></a>
+                    <li><a href="#profil">Les poissons pilotes</a></li>
+                    <li><a href="#chapeaux">80 chapeaux</a></li>
+                    <li><a href="#avis">Les avis ne comptent pas </a></Les></li>
+                    <li><a href="#about">Au sujet de qui?</a></li>
+                </ul>
+            </nav>
+        <!-- burger import burger Collapse -->
+        <button class="header-burger header-burger--is-open hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button> 
+    </section>
+    <!-- modale menu-->
+    <section class="header-modal">
+        <!-- nav haut -->
+        <nav class="nav-height">
+            <ul>
                 <li><a href="#home">Home</li></a>
                 <li><a href="#histoire">La belle histoire</li></a>
                 <li><a href="#profil">Les poissons pilotes</a></li>
@@ -26,13 +50,13 @@
                 <li><a href="#about">Au sujet de qui?</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
+    </header> 
 
     <!-- hero -->
     <section class="hero flex justifyBetween" id="home">
         <!-- image en background -->
             <h2>On vous ment, les Chapeaux Poissons existent ! </h2>
-            
             <div class="positionImg1 imageAnim1 deplacemetnAnim"><img class=" imgRonde" src="./assets/images/grid2.jpg" alt="photo de chapeau poisson"></div>
             <div class="positionImg2 imageAnim2 deplacemetnAnim"><img class=" imgRonde" src="./assets/images/grid1.jpg" alt="photo de chapeau poisson"></div>
             <div class="positionImg3 imageAnim3 deplacemetnAnim"><img class=" imgRonde" src="./assets/images/grid3.jpg" alt="photo de chapeau poisson"></div>
@@ -62,7 +86,7 @@
         </div>
 
         <div class=" flex imagehistoire">
-            <img src="./assets/images/histoire.jpg" alt="photo chapeau poisson">
+            <img src="./assets/images/grid8.jpg" alt="photo chapeau poisson">
         </div>
     </section>
 
@@ -295,6 +319,6 @@
             C'est pas nous qui le disons c'est l'IA. : "l'IA, avec sa capacité à analyser les tendances de la mode et à générer des idées novatrices, a joué un rôle clé dans la conception des chapeaux les plus délirants".</p>
         </div>
     </footer>
-   
+    <script type="module" src="./assets/js/app.js" defer></script>
 </body>
 </html>
